@@ -1,0 +1,236 @@
+/**主頁css及其他共用css**/
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+p,a,input,label,textarea,span,ul,li{
+    font-family: 'Noto Serif TC', serif;
+}
+
+header .index{
+    background-color: white;
+}
+
+header{
+    background-color: #304556;
+    color: white;
+}
+
+header .nav-link, .navbar-nav .nav-link.active, .navbar-nav .show>.nav-link {
+    color: white;
+}
+
+img{
+    max-width: 100%;
+}
+
+header nav img{
+    width: 150px;
+}
+
+header .navbar-brand{
+    margin-right: 0px;
+}
+
+header a .nav-link, header span{
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+/**游標碰到就顯示**/
+.dropdown-menu li:hover .sub-menu {
+    visibility: visible;
+}
+
+.dropdown-menu li:hover {
+    visibility: visible;
+}
+
+.nav-link:focus, .nav-link:hover {
+    color: white;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+} 
+/** **/
+
+#intro{
+    padding-bottom: 50px;
+    background-color: #304556;
+}
+
+#intro img{
+    height: 60vh;
+}
+
+#intro .black{
+    color: black;
+}
+
+#intro .carousel-item h3{
+    color: black;
+    font-weight: bolder;
+    display: flex;
+    align-items: center;
+}
+
+#intro .carousel-item p{
+    color: black;
+    font-weight: bold;
+    
+} 
+
+#second{
+    padding: 80px 0px;
+    background: rgb(248, 248, 248);
+}
+
+#second a{
+    color: black;
+    text-decoration: none;
+}
+
+#second img{
+    width: 100%;
+    height: 40vh;
+}
+
+#second .moreInfor .btn{
+    background-color: #FFC300;
+    margin: 12px 0px -5px 18px;
+    
+}
+
+#second .dropdown .btn{
+    color: white;
+    background-color: #304556;
+}
+
+#second .card{
+    width: 100%; 
+    object-fit: cover;
+}
+
+#second .card img{
+    transform: scale(1,1); 
+    transition: all 0.3s ease-out;
+}
+
+#second .card img:hover{
+    transform: scale(1.05,1.05); 
+}
+
+#second .card button:hover{
+    transition: all 0.2s;
+    transform: scale(1.05,1.05);
+}
+
+footer{
+    border-top: solid 1px #c9c9c9;
+    padding: 80px 0px;
+}
+
+footer a{
+    text-decoration: none;
+    color: black;
+}
+
+footer img{
+    width: 200px;
+    margin-bottom: 10px;
+}
+
+footer span{
+    margin-left: 15px;
+    font-weight: bold;
+}
+
+footer ul{
+    list-style: none;
+    padding: 0;
+    float: left;
+    margin-right: 50px;
+}
+
+footer li{
+    margin-bottom: 10px;
+}
+
+footer ul li a{
+    color: #304556;
+    font-weight: bold;
+}
+
+footer ul li a:hover, footer .contact a:hover{
+    color: #FFC300;
+}
+
+footer .contact a{
+    font-size: 20px;
+    color: #304556;
+    font-weight: bold;
+}
+
+/*縣市css*/
+
+.cityName{
+    border-bottom: 4px solid #FFC300;
+    color: black;
+    font-size: 40px;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+.all{
+    font-size: 25px;
+}
+
+/*食物介紹*/
+
+.modal-header{
+    background-color: #FFC300;
+}
+
+.modal-title{
+    border-left: 8px solid white;
+    color: white;
+    font-size: 40px;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+.foodIntro{
+    text-indent: 2em;
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+.modal-body{
+    margin-top: 40px;
+}
+
+.shopMaterial{
+    font-size: 24px; 
+    margin-left: 60px;  
+}
+
+.foodInfor{
+    margin-top: 30px;
+    margin-left: 60px;
+    margin: 30px 0 0 60px;
+}
+
+.Map{
+    margin-top: 30px;
+}
+
+@media screen and (max-width: 1920px) and (min-width: 1024px){
+    .collapse{
+        display: flex;
+        justify-content: flex-end
+    } 
+}
+
+@media screen and (max-width: 768px){
+    footer .footer-link{
+        margin-top: 20px;
+    }
+}
